@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+*,  *::before, *::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   border: none;
+}
+
+body {
+   background: #C9E5FF;
+   font-family: 'Montserrat', sans-serif;
+}
+
+.head {
+
+}
+
+._container {
+   padding: 0 67px;
+   margin: 0 auto;
+   margin-top: 43px;
+}
+
+.head-line {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.header-iamge {
+
+}
+.phone {
+
+}
+.items-phone {
+   display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+    row-gap: 7px;
+    column-gap: 45px;
+}
+
+.items-phone img {
+   padding-right: 9px;
+}
+
+.item-phone{
+    align-items: center;
+    display: flex;
+}
+
+.header-content {
+   display: flex;
+   justify-content: space-between;
+   gap: 254px;
+   align-items: center;
+   margin-top: 34px;
+   margin-bottom: 147px;
+}
+.head-title {
+   max-width: 50%;
+}
+.title {
+   font-weight: 500;
+   font-size: 45px;
+}
+.text {
+   font-weight: 400;
+   font-size: 37px;
+   margin-top: 29px;
+}
+
+.text-info {
+   padding-top: 77px;
+   font-weight: 400;
+   font-size: 25px;
+   max-width: 77%;
+}
+
+.scroll {
+  
+}
+
+.scroll-image {
+   border-radius: 20px;
+}
+
+.button {
+  margin-top: 56px;
+}
+
+.btn {
+   background: #fff;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   border-radius: 60px;
+   font-weight: 400;
+   padding: 32px 105px;
+   font-size: 34px;
+   letter-spacing: 2px;
+   color: #000;
+}
+.about__us{
+   background: #fff;
+}
+
+.title-about {
+   padding-top: 74px;
+   padding-bottom: 83px;
+   text-align: center;
+   font-weight: 500;
+   font-size: 57px;
+}
+
+.info__about {
+ 
+}
+
+.text__about {
+   font-weight: 400;
+   font-size: 27px;
+ 
+}
+
+
+.text__about span {
+   color: #2E5C87;
+}
+
+.information {
+   grid-template-columns: repeat(2, auto);
+   display: grid;
+   row-gap: 93px;
+   column-gap: 170px;
+   justify-content: space-between;
+}
+.text__about {
+}
+.information-right {
+}
+.line {
+}
