@@ -4,16 +4,12 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   border: none;
+
 }
 
 body {
    background: #C9E5FF;
    font-family: 'Montserrat', sans-serif;
-}
-
-.head {
-
 }
 
 ._container {
@@ -27,18 +23,13 @@ body {
    justify-content: space-between;
    align-items: center;
 }
-.header-iamge {
 
-}
-.phone {
-
-}
 .items-phone {
    display: grid;
-    grid-template-columns: repeat(2, auto);
-    justify-content: space-between;
-    row-gap: 7px;
-    column-gap: 45px;
+   grid-template-columns: repeat(2, auto);
+   justify-content: space-between;
+   row-gap: 7px;
+   column-gap: 45px;
 }
 
 .items-phone img {
@@ -46,8 +37,8 @@ body {
 }
 
 .item-phone{
-    align-items: center;
-    display: flex;
+   align-items: center;
+   display: flex;
 }
 
 .header-content {
@@ -58,13 +49,16 @@ body {
    margin-top: 34px;
    margin-bottom: 147px;
 }
+
 .head-title {
    max-width: 50%;
 }
+
 .title {
    font-weight: 500;
    font-size: 45px;
 }
+
 .text {
    font-weight: 400;
    font-size: 37px;
@@ -76,10 +70,6 @@ body {
    font-weight: 400;
    font-size: 25px;
    max-width: 77%;
-}
-
-.scroll {
-  
 }
 
 .scroll-image {
@@ -112,15 +102,10 @@ body {
    font-size: 57px;
 }
 
-.info__about {
- 
-}
-
 .items-text {
    font-weight: 400;
    font-size: 25px;
 }
-
 
 .items-text span {
    color: #2E5C87;
@@ -130,7 +115,7 @@ body {
    font-weight: 400;
    font-size: 25px;
    display: flex;
-    align-items: center;
+   align-items: center;
 }
 
 .item-text span  {
@@ -160,26 +145,19 @@ body {
    text-align: center;
    font-weight: 500;
    font-size: 57px;
-   margin-top: 77px;
-   margin-bottom: 139px;
-}
-
-.product {
-}
-._container {
+   margin-bottom: 120px;
 }
 
 .container-product {
-  display: flex;
-  justify-content: center;
+   display: flex;
+   justify-content: center;
 }
+
 .product-image {
    display: grid;
    grid-template-columns: repeat(2, auto);
    justify-content: space-between;
    column-gap: 220px;
-}
-.product-item {
 }
 
 .img-responsive {
@@ -202,11 +180,6 @@ body {
    padding-bottom: 20px;
 }
 
-
-
-.content-product {
-
-}
 .img-responsive:hover img {
    filter: brightness(0.7);
    transition: all ease 0.5s;
@@ -245,10 +218,10 @@ body {
 }
 
 .button-image_1 {
-  justify-content: center;
-  display: flex;
-  margin-top: 30px;
-  margin-bottom: 214px;
+   justify-content: center;
+   display: flex;
+   margin-top: 30px;
+   margin-bottom: 214px;
 }
 
 .btn_1 {
@@ -265,4 +238,100 @@ body {
    font-size: 28px;
    letter-spacing: 2px;
    color: #000;
+}
+
+.place {
+   background: #fff;
+}
+._container {
+}
+.title-place {
+   padding-top: 74px;
+   padding-bottom: 136px;
+   font-weight: 500;
+   font-size: 45px;
+   text-align: center;
+}
+
+.map {
+   display: flex;
+   justify-content: space-around;
+}
+
+.title-map {
+   font-weight: 400;
+   margin-bottom: 32px;
+   font-size: 32px;
+}
+
+.title-input {
+   font-weight: 400;
+   font-size: 37px;
+   margin-top: 100px;
+   margin-bottom: 27px; 
+}
+
+.wpcf7-form-control-wrap {
+   position: relative;
+}
+
+.form-control {
+   display: block;
+   width: 100%;
+   height: calc(1.5em + 0.75rem + 2px);
+   padding: 0.375rem 0.75rem;
+   font-size: 1rem;
+   font-weight: 400;
+   line-height: 1.5;
+   color: #495057;
+   background-color: #fff;
+   background-clip: padding-box;
+   border: 1px solid #ced4da;
+   border-radius: 0.25rem;
+   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+textarea {
+   overflow: auto;
+   resize: vertical;
+}
+
+.title-contact {
+   font-size: 57px;
+   font-weight: 400;
+   text-align: center;
+   margin-bottom: 10px;
+   padding-top: 65px ;
+}
+
+
+.mobile {
+   margin-bottom: 68px;
+}
+.item-mobile {
+   font-weight: 400;
+   font-size: 22px;
+   text-align: center;
+   margin-bottom: 4px;
+   padding-right: 4px;
+   color: #000;
+}
+
+.item-mobile img {
+   margin-right: 5px;
+}
+.item-mobile a {
+   color: #000;
+}
+
+.contact-app {
+   display: flex;
+   justify-content: space-between;
+}
+
+.instagram {
+
+}
+.olx {
+   border-radius: 50px;
 }
