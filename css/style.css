@@ -18,6 +18,11 @@ body {
    margin-top: 43px;
 }
 
+.container {
+   padding: 0 67px;
+   margin: 0 auto;
+}
+
 .head-line {
    display: flex;
    justify-content: space-between;
@@ -145,6 +150,7 @@ body {
    text-align: center;
    font-weight: 500;
    font-size: 57px;
+   margin-top: 77px;
    margin-bottom: 120px;
 }
 
@@ -243,8 +249,7 @@ body {
 .place {
    background: #fff;
 }
-._container {
-}
+
 .title-place {
    padding-top: 74px;
    padding-bottom: 136px;
@@ -296,6 +301,25 @@ textarea {
    resize: vertical;
 }
 
+.button-input {
+   margin-top: 50px;
+}
+
+.btn-input {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 22px;
+  width: 567px;
+  height: 74px;
+  background: #000;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+  border-radius: 50px;
+  margin-bottom: 200px;
+}
+
 .title-contact {
    font-size: 57px;
    font-weight: 400;
@@ -304,10 +328,10 @@ textarea {
    padding-top: 65px ;
 }
 
-
 .mobile {
    margin-bottom: 68px;
 }
+
 .item-mobile {
    font-weight: 400;
    font-size: 22px;
@@ -320,6 +344,7 @@ textarea {
 .item-mobile img {
    margin-right: 5px;
 }
+
 .item-mobile a {
    color: #000;
 }
@@ -329,9 +354,22 @@ textarea {
    justify-content: space-between;
 }
 
-.instagram {
-
-}
 .olx {
    border-radius: 50px;
+}
+
+.footer {
+   background: #3D3D3D;
+}
+
+.footer-title {
+   font-weight: 400;
+   font-size: 32px;
+   text-align: center;
+   padding-top: 54px;
+   padding-bottom: 54px;
+}
+
+.footer-title a {
+   color: #fff;
 }
