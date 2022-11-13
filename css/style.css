@@ -53,7 +53,7 @@ a {
 .header-content {
    display: flex;
    justify-content: space-between;
-   gap: 254px;
+   gap: 60px;
    align-items: center;
    margin-top: 34px;
    margin-bottom: 147px;
@@ -62,7 +62,9 @@ a {
 .head-title {
    max-width: 50%;
 }
-
+.head-text {
+   position: relative;
+}
 .title {
    font-weight: 500;
    font-size: 45px;
@@ -231,7 +233,7 @@ a {
  #slide4:checked ~ #bullets label:nth-child(4) {
    background: #444;
  }
- @media screen and (max-width: 900px) {
+ @media screen and (max-width: 660px) {
    #slide1:checked ~ #controls label:nth-child(2),
    #slide2:checked ~ #controls label:nth-child(3),
    #slide3:checked ~ #controls label:nth-child(4),
@@ -240,13 +242,27 @@ a {
    #slide2:checked ~ #controls label:nth-last-child(3),
    #slide3:checked ~ #controls label:nth-last-child(4),
    #slide4:checked ~ #controls label:nth-last-child(1) {
-      margin: 0;
+      float: right;
+      margin: 0 5px 0 0;
+      display: block;
+      margin-top: -170px;
    }
+
    #slides {
       max-width: calc(100% - 140px);
       margin: 0 auto;
    }
  }
+
+@media (max-width: 660px) {
+   #slide1:checked ~ #controls label:nth-last-child(1), #slide2:checked ~ #controls label:nth-last-child(4), #slide3:checked ~ #controls label:nth-last-child(3), #slide4:checked ~ #controls label:nth-last-child(2) {
+      float: left;
+      margin: 0 0 0 20px;
+      display: block;
+      margin-top: -170px;
+  }
+  
+}
 
 .items-text {
    font-weight: 400;
@@ -420,8 +436,8 @@ a {
 .title-input {
    font-weight: 400;
    font-size: 37px;
-   margin-top: 100px;
-   margin-bottom: 27px; 
+   padding-top: 100px;
+   padding-bottom: 27px; 
 }
 
 .wpcf7-form-control-wrap {
@@ -430,7 +446,7 @@ a {
 
 .form-control {
    display: block;
-   width: 100%;
+   width: 55%;
    height: calc(1.5em + 0.75rem + 2px);
    padding: 0.375rem 0.75rem;
    font-size: 1rem;
@@ -451,6 +467,7 @@ textarea {
 
 .button-input {
    margin-top: 50px;
+   padding-bottom: 200px;
 }
 
 .btn-input {
@@ -465,7 +482,6 @@ textarea {
   background: #000;
   box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
   border-radius: 50px;
-  margin-bottom: 200px;
 }
 
 .btn-input {
@@ -494,12 +510,21 @@ textarea {
    color: #000;
 }
 
+
+
 .item-mobile img {
    margin-right: 5px;
 }
 
 .item-mobile a {
    color: #000;
+}
+
+.reg {
+   background: #fff;
+}
+.input {
+
 }
 
 .contact-app {
@@ -526,3 +551,244 @@ textarea {
 .footer-title a {
    color: #fff;
 }
+
+@media (max-width: 1726px) {
+   .container__about {
+      justify-content: space-between;
+      display: flex;
+      gap: 40px;
+      padding-bottom: 210px;
+  }
+}
+
+@media (max-width: 1578px) {
+   .map {
+      display: grid;
+      justify-content: start;
+      gap: 20px;
+  }
+   .contact-app {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+  }
+}
+
+@media (max-width: 1350px) {
+   #bullets {
+      margin: 135px 0 0;
+      text-align: center;
+  }
+   .text-info {
+      padding-top: 77px;
+      font-weight: 400;
+      font-size: 25px;
+      max-width: 100%;
+  }
+}
+@media (max-width: 1355px) {
+   .items-text {
+      font-weight: 400;
+      font-size: 21px;
+  }
+   .item-text {
+      font-weight: 400;
+      font-size: 21px;
+      display: flex;
+      align-items: center;
+  }
+}
+@media (max-width: 1305px) {
+   .product-image {
+      display: grid;
+      grid-template-columns: repeat(1, auto);
+      justify-content: space-between;
+      column-gap: 220px;
+  }
+}
+@media (max-width: 1260px) {
+   .items-phone {
+      display: grid;
+      grid-template-columns: repeat(1, auto);
+      justify-content: space-between;
+      row-gap: 7px;
+      column-gap: 45px;
+  }
+}
+
+@media (max-width: 1250px) {
+   #bullets {
+      margin: 120px 0 0;
+      text-align: center;
+  }
+}
+
+@media (max-width: 1108px) {
+ #bullets {
+      margin: 75px 0 0;
+      text-align: center;
+  }
+}
+
+@media (max-width: 1010px) {
+   #bullets {
+      margin: 50px 0 0;
+      text-align: center;
+  }
+}
+@media (max-width: 965px) {
+   #bullets {
+      margin: 40px 0 0;
+      text-align: center;
+  }
+}
+@media (max-width: 896px) {
+   #bullets {
+      margin: 15px 0 0;
+      text-align: center;
+  }
+}
+
+@media (max-width: 1185px) {
+   .title {
+      font-weight: 500;
+      font-size: 37px;
+  }
+  .text {
+      font-weight: 400;
+      font-size: 32px;
+      margin-top: 29px;
+}
+.text-info {
+      padding-top: 55px;
+      font-weight: 400;
+      font-size: 22px;
+      max-width: 100%;
+  }
+}
+
+@media (max-width: 1083px) {
+   .btn {
+      background: #fff;
+      box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+      border-radius: 60px;
+      font-weight: 400;
+      padding: 25px 76px;
+      font-size: 27px;
+      letter-spacing: 2px;
+      color: #000;
+      transition: all ease 0.5s;
+  }
+}
+
+@media (max-width: 1000px) {
+   .title {
+      font-weight: 500;
+      font-size: 32px;
+  }
+  .text {
+      font-weight: 400;
+      font-size: 27px;
+      margin-top: 29px;
+  }
+.text-info {
+      padding-top: 55px;
+      font-weight: 400;
+      font-size: 18px;
+      max-width: 100%;
+  } 
+}
+
+
+
+@media (max-width: 920px) {
+   .head-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 50px;
+  }
+
+   .btn {
+      background: #fff;
+      box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+      border-radius: 60px;
+      font-weight: 400;
+      padding: 27px 111px;
+      font-size: 27px;
+      letter-spacing: 2px;
+      color: #000;
+      transition: all ease 0.5s;
+  }
+   .header-content {
+      display: grid;
+      justify-content: center;
+      gap: 60px;
+      margin-top: 34px;
+      margin-bottom: 400px;
+   }
+   
+   .head-title {
+      max-width: 100%;
+  }
+   .item-phone {
+      align-items: center;
+      display: flex;
+      font-size: 14px;
+      justify-content: flex-end;
+  }
+   .item-phone img {
+      width: 27px;
+  }
+  .title {
+      font-weight: 500;
+      font-size: 32px;
+      text-align: center;
+  }
+  .head-text {
+      position: absolute;
+      top: 110%;
+      padding: 0px 67px 0px 0px
+  }
+  .text {
+   font-weight: 400;
+   font-size: 27px;
+   margin-top: 29px;
+   text-align: center;
+  }
+  .text-info {
+   padding-top: 55px;
+   font-weight: 400;
+   font-size: 18px;
+   max-width: 100%;
+   text-align: center;
+}
+.button {
+   margin-top: 56px;
+   display: flex;
+   justify-content: center;
+}
+#bullets {
+   margin: 140px 0 0;
+   text-align: center;
+}
+}
+
+@media (max-width: 660px) {
+   #bullets {
+      margin: 60px 0 0;
+      text-align: center;
+   }
+   .head-text {
+      position: absolute;
+      top: 95%;
+      padding: 0px 67px 0px 0px;
+  }
+  .header-content {
+   display: grid;
+   justify-content: center;
+   gap: 10px;
+   margin-top: 34px;
+   margin-bottom: 400px;
+}
+} 
