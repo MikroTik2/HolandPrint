@@ -1152,6 +1152,9 @@ textarea {
       font-size: 20px;
       height: 80px;
    }
+   .header-image {
+      width: 75%;
+  }
 }
 @media (max-width: 330px) {
    .btn_1 {
