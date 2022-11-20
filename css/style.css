@@ -19,12 +19,14 @@ a {
 ._container {
    padding: 0 64px;
    margin: 0 auto;
+   max-width: 1950px;
    margin-top: 43px;
 }
 
 .container {
    padding: 0 67px;
    margin: 0 auto;
+   max-width: 1950px;
 }
 
 .head-line {
@@ -53,7 +55,7 @@ a {
 .header-content {
    display: flex;
    justify-content: space-between;
-   gap: 60px;
+   gap: 80px;
    align-items: center;
    margin-top: 34px;
    margin-bottom: 147px;
@@ -180,32 +182,37 @@ a {
  #controls label {
    transition: opacity 0.2s ease-out;
    display: none;
-   width: 50px;
-   height: 50px;
+   width: 65px;
+   height: 94px;
    opacity: .4;
  }
  #controls label:hover {
    opacity: 1;
  }
+
  #slide1:checked ~ #controls label:nth-child(2),
  #slide2:checked ~ #controls label:nth-child(3),
  #slide3:checked ~ #controls label:nth-child(4),
  #slide4:checked ~ #controls label:nth-child(1) {
-   background: url(img/Group\ 1.png) no-repeat;
+   background: url(img/Right\ arrow\ 1.png) no-repeat;
    float:right;
    margin: 0 -65px 0 0;
    display: block;
-   margin-top: -170px;
+   margin-top: -210px;
+ }
+ #slide1 label {
+   width: 100%;
+   height: 100%;
  }
  #slide1:checked ~ #controls label:nth-last-child(1),
  #slide2:checked ~ #controls label:nth-last-child(4),
  #slide3:checked ~ #controls label:nth-last-child(3),
  #slide4:checked ~ #controls label:nth-last-child(2) {
-   background: url(img/Group\ 2.png) no-repeat;
+   background: url(img/Left\ arrow\ 1.png) no-repeat;
    float:left;
-   margin: 0 0 0 -50px;
+   margin: 0 0 0 -70px;
    display: block;
-   margin-top: -170px;
+   margin-top: -210px;
  }
  #bullets {
    margin: 150px 0 0;
@@ -230,11 +237,11 @@ a {
    #slide2:checked ~ #controls label:nth-child(3), 
    #slide3:checked ~ #controls label:nth-child(4), 
    #slide4:checked ~ #controls label:nth-child(1) {
-     background: url(img/Group\ 1.png) no-repeat;
+     background: url(img/Right\ arrow\ 1.png) no-repeat;
      float: right;
      margin: 0 5px 0 0;
      display: block;
-     margin-top: -170px;
+     margin-top: -200px;
   }
 
    #slides {
@@ -250,9 +257,9 @@ a {
 #slide3:checked ~ #controls label:nth-last-child(3), 
 #slide4:checked ~ #controls label:nth-last-child(2) {
    float: left;
-   margin: 0 0 0 20px;
+   margin: 0 0 0 0px;
    display: block;
-   margin-top: -170px;
+   margin-top: -200px;
   }
   
 }
@@ -354,6 +361,8 @@ a {
    justify-content: center;
    display: flex;
    font-size: 22px;
+   padding-top: 1px;
+   gap: 1rem;
    top: 260px;
    background: #fff;
    left: calc(50% - 100px);
@@ -950,27 +959,35 @@ textarea {
       align-items: center;
       height: 130%;
       color: #fff;
-}
+  }
+   #controls label {
+      transition: opacity 0.2s ease-out;
+      display: none;
+      width: 29px;
+      height: 46px;
+      opacity: .4;
+  }
 #slide1:checked ~ #controls label:nth-child(2), 
 #slide2:checked ~ #controls label:nth-child(3), 
 #slide3:checked ~ #controls label:nth-child(4), 
 #slide4:checked ~ #controls label:nth-child(1) {
-   background: url(img/Group\ 1.png) no-repeat;
+   background: url(img/Right\ arrowMini\ 1.png) no-repeat;
    float: right;
-   margin: 0 5px 0 0;
+   margin: 0 35px 0 0;
    display: block;
    margin-top: -40px;
-}
+  }
 
 #slide1:checked ~ #controls label:nth-last-child(1), 
 #slide2:checked ~ #controls label:nth-last-child(4), 
 #slide3:checked ~ #controls label:nth-last-child(3), 
 #slide4:checked ~ #controls label:nth-last-child(2) {
+   background: url(img/Left\ arrowMini\ 1.png) no-repeat;
    float: left;
-   margin: 0 0 0 20px;
+   margin: 0 0 0 35px;
    display: block;
    margin-top: -40px;
-}
+  }
    #bullets {
       margin: 100px 0 0;
       text-align: center;
@@ -1050,13 +1067,20 @@ textarea {
       height: 110%;
       color: #fff;
   }
+  #controls label {
+   transition: opacity 0.2s ease-out;
+   display: none;
+   width: 29px;
+   height: 46px;
+   opacity: .4;
+}
   #slide1:checked ~ #controls label:nth-child(2), 
   #slide2:checked ~ #controls label:nth-child(3), 
   #slide3:checked ~ #controls label:nth-child(4), 
   #slide4:checked ~ #controls label:nth-child(1) {
-      background: url(img/Group\ 1-small.png) no-repeat;
+      background: url(img/Right\ arrowMini\ 1.png) no-repeat;
       float: right;
-      margin: 0 12px 0 0;
+      margin: 0 35px 0 0;
       display: block;
       margin-top: 0px;
   }
@@ -1064,9 +1088,9 @@ textarea {
 #slide2:checked ~ #controls label:nth-last-child(4), 
 #slide3:checked ~ #controls label:nth-last-child(3), 
 #slide4:checked ~ #controls label:nth-last-child(2) {
-      background: url(img/Group\ 2-small.png) no-repeat;
+      background: url(img/Left\ arrowMini\ 1.png) no-repeat;
       float: left;
-      margin: 0 0 0 45px;
+      margin: 0 0 0 35px;
       display: block;
       margin-top: 0px;
   }
@@ -1348,8 +1372,18 @@ textarea {
       height: 78px;
       font-size: 22px;
       top: 190px;
-      
   }
+  .footer-title a {
+      color: #fff;
+      font-size: 18px;
+  }
+  .footer-title {
+   font-weight: 400;
+   font-size: 24px;
+   text-align: center;
+   padding-top: 44px;
+   padding-bottom: 44px;
+}
 }
 @media (max-width: 360px) {
    .btn-image {
@@ -1388,5 +1422,3 @@ textarea {
       top: 130px;
   }
 }
-
-
